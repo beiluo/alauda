@@ -15,11 +15,13 @@ RUN   \
   ln -s /opt/node/bin/* . && \
   rm -f /opt/node-v0.12.7-linux-x64.tar.gz
 
-ADD server /work
-
-WORKDIR /work
-
+# install app
+ENV PREFIX /app
+WORKDIR /app
+# Install mongodb
+ADD start.sh /start.sh
+RUN chmod 755 /start.sh
+ADD server $PREFIX
 RUN npm install
 
-CMD ["node","server.js"]
-
+CMD /start.sh $MONGO_PORT_27017_TCP_ADDR $MONGO_PORT_27017_TCP_PORT
