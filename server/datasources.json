@@ -3,7 +3,7 @@
     "name": "db",
     "connector": "mongodb",
     "host": "127.0.0.1", 
-    "database": "demo", 
+    "database": "admin", 
     "username": "admin", 
     "password": "U2CXnc7DfCXT", 
     "port": 27017 
