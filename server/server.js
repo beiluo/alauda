@@ -13,7 +13,7 @@ app.start = function() {
 var fs       =require("fs");
 fs.readFile('./datasources.json', function (err, data) {
 	console.log(err);
-  console.log(data);
+  console.log(data.toString());
 });
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
