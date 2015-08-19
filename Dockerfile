@@ -21,7 +21,7 @@ WORKDIR /app
 # Install mongodb
 ADD start.sh /start.sh
 RUN chmod 755 /start.sh
-ADD server $PREFIX
+ADD . $PREFIX
 RUN npm install
 
 CMD /start.sh $MONGO_PORT_27017_TCP_ADDR $MONGO_PORT_27017_TCP_PORT
