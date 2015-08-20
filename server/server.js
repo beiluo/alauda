@@ -15,6 +15,7 @@ fs.readFile('./datasources.json', function (err, data) {
 	console.log(err);
   console.log(data.toString());
 });
+console.log(process.env);
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
 boot(app, __dirname, function(err) {
