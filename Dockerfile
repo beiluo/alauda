@@ -24,4 +24,6 @@ RUN chmod 755 /start.sh
 ADD server $PREFIX
 RUN npm install
 
+RUN npm install -g pm2
+
 CMD /start.sh $MONGO_PORT_27017_TCP_ADDR $MONGO_PORT_27017_TCP_PORT
