@@ -6,13 +6,16 @@
     "pretest": "jshint ."
   },
   "dependencies": {
+    "async": "^1.4.2",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
+    "debug": "^2.2.0",
     "errorhandler": "^1.1.1",
     "loopback": "^2.14.0",
     "loopback-boot": "^2.6.5",
-    "loopback-connector-mongodb": "^1.13.0",
+    "loopback-connector": "^2.3.0",
     "loopback-datasource-juggler": "^2.19.0",
+    "mongodb": "^2.0.42",
     "serve-favicon": "^2.0.1"
   },
   "optionalDependencies": {
