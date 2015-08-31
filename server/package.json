@@ -15,6 +15,7 @@
     "loopback-boot": "^2.6.5",
     "loopback-connector": "^2.3.0",
     "loopback-datasource-juggler": "^2.19.0",
+    "memwatch-next": "^0.2.9",
     "mongodb": "^2.0.42",
     "serve-favicon": "^2.0.1"
   },
